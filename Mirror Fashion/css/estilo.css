@@ -128,14 +128,8 @@ header {
     margin: 10px 0;
     padding: 10px;
     width: 445px;
-}
-
-.novidades {
-    float: left;
-}
-
-.mais-vendidos {
-    float: right;
+    border-radius: 4px;
+    box-shadow: 1px 1px 4px #999;
 }
 
 .painel li {
@@ -146,11 +140,19 @@ header {
     padding-bottom: 10px;
 }
 
+.painel li:hover {
+    box-shadow: 0 0 5px #333;
+    transition: 0.7s;
+    background-color: rgba(255, 255, 255, 0.8);
+    transform: scale(1.2) rotate(-5deg);
+}
+
 .painel h2 {
     font-size: 24px;
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 10px;
+    text-shadow: 3px 3px 2px rgba(255, 255, 255, 0.8);
 }
 
 .painel a {
@@ -162,10 +164,14 @@ header {
 
 .novidades {
     background-color: #F5DCDC;
+    background: linear-gradient(#F5DCDC, #BEBEF4);
+    float: left;
 }
 
 .mais-vendidos {
     background-color: #DCDCF5;
+    background: linear-gradient(#DCDCF5, #F4BEBE);
+    float: right;
 }
 
 footer {
@@ -207,6 +213,11 @@ footer .container {
 
 .social a[href*="plus.google.com"] {
     background-image: url(../img/googleplus.png);
+}
+
+.busca {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .busca button {
